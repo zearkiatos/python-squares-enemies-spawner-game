@@ -4,15 +4,19 @@ from src.ecs.create.prefabric_creator import create_square
 from src.ecs.systems.s_movement import system_movement
 from src.ecs.systems.s_rendering import system_rendering
 from src.ecs.systems.s_screen_bounce import system_screen_bounce
+from src.utils.file_handler import read_json_file
 
 
 class GameEngine:
     def __init__(self) -> None:
         pygame.init()
-        self.screen = pygame.display.set_mode((640, 340), pygame.SCALED)
+        self.window_config = read_json_file("assets/cfg/window.json")
+        sizes = tuple(self.window_config["window"]["size"].values())
+        pygame.display.set_caption(self.window_config["window"]["title"])
+        self.screen = pygame.display.set_mode(sizes, pygame.SCALED)
         self.clock = pygame.time.Clock()
         self.is_running = False
-        self.framerate = 60
+        self.framerate = self.window_config["window"]["framerate"]
         self.delta_time = 0
 
         self.ecs_world = esper.World()
@@ -45,7 +49,8 @@ class GameEngine:
         system_screen_bounce(self.ecs_world, self.screen)
 
     def _draw(self):
-        self.screen.fill((0, 200, 128))
+        color = tuple(self.window_config["window"]["bg_color"].values())
+        self.screen.fill(color)
 
         system_rendering(self.ecs_world, self.screen)
         pygame.display.flip()
