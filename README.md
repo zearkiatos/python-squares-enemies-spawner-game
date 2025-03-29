@@ -1,6 +1,6 @@
 # Description
 
-This a project to learn how to development games 🎮 with python 🐍 and pygame and how to build games with ECS (Entity-Component-System) pattern, it is a fundamental exercise to make a bouncing square ⬜️ animation
+This is a spawner of enemies square 🟩 system bouncing on the screen 📺. This is a game 🎮 made with python 🐍 and pygame
 
 # Made with
 
