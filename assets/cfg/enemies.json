@@ -2,7 +2,7 @@
     {
         "name": "Goblin",
         "size": {
-            "width": 50,
+            "width": 10,
             "height": 50
         },
         "color": {
@@ -11,15 +11,15 @@
             "blue": 0
         },
         "speed": {
-            "minimum": 1,
-            "maximum": 3
+            "minimum": 100,
+            "maximum": 100
         }
     },
     {
         "name": "Orc",
         "size": {
             "width": 60,
-            "height": 60
+            "height": 20
         },
         "color": {
             "red": 255,
@@ -27,14 +27,14 @@
             "blue": 0
         },
         "speed": {
-            "minimum": 2,
-            "maximum": 4
+            "minimum": 200,
+            "maximum": 200
         }
     },
     {
         "name": "Troll",
         "size": {
-            "width": 70,
+            "width": 30,
             "height": 70
         },
         "color": {
@@ -43,8 +43,8 @@
             "blue": 255
         },
         "speed": {
-            "minimum": 3,
-            "maximum": 5
+            "minimum": 300,
+            "maximum": 300
         }
     }
 ]

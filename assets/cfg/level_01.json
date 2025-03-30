@@ -1,6 +1,6 @@
 [
     {
-        "enemy_type": "goblin",
+        "enemy_type": "Goblin",
         "time": 0,
         "position": {
             "x": 100,
@@ -8,7 +8,7 @@
         }
     },
     {
-        "enemy_type": "orc",
+        "enemy_type": "Orc",
         "time": 5,
         "position": {
             "x": 300,
@@ -16,7 +16,7 @@
         }
     },
     {
-        "enemy_type": "troll",
+        "enemy_type": "Troll",
         "time": 10,
         "position": {
             "x": 500,
@@ -24,7 +24,7 @@
         }
     },
     {
-        "enemy_type": "goblin",
+        "enemy_type": "Goblin",
         "time": 15,
         "position": {
             "x": 70,
@@ -32,7 +32,7 @@
         }
     },
     {
-        "enemy_type": "orc",
+        "enemy_type": "Orc",
         "time": 20,
         "position": {
             "x": 90,
@@ -40,7 +40,7 @@
         }
     },
     {
-        "enemy_type": "troll",
+        "enemy_type": "Troll",
         "time": 25,
         "position": {
             "x": 100,
@@ -48,7 +48,7 @@
         }
     },
     {
-        "enemy_type": "goblin",
+        "enemy_type": "Goblin",
         "time": 30,
         "position": {
             "x": 300,

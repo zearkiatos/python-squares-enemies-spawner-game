@@ -1,9 +1,10 @@
 import pygame
 import esper
-from src.ecs.create.prefabric_creator import create_square
+from src.ecs.create.prefabric_creator import create_square, create_enemies
 from src.ecs.systems.s_movement import system_movement
 from src.ecs.systems.s_rendering import system_rendering
 from src.ecs.systems.s_screen_bounce import system_screen_bounce
+from src.ecs.systems.s_enemy_spawner import system_enemy_spawner
 from src.utils.file_handler import read_json_file
 
 
@@ -32,8 +33,7 @@ class GameEngine:
         self._clean()
 
     def _create(self):
-        create_square(self.ecs_world, pygame.Vector2(50, 50), pygame.Vector2(
-            150, 100), pygame.Vector2(150, 300), pygame.Color(255, 100, 100))
+        system_enemy_spawner(self.ecs_world)
 
     def _calculate_time(self):
         self.clock.tick(self.framerate)
