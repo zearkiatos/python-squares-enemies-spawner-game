@@ -46,5 +46,21 @@
             "minimum": 300,
             "maximum": 300
         }
+    },
+    {
+        "name": "Dragon",
+        "size": {
+            "width": 100,
+            "height": 100
+        },
+        "color": {
+            "red": 255,
+            "green": 255,
+            "blue": 0
+        },
+        "speed": {
+            "minimum": 400,
+            "maximum": 400
+        }
     }
 ]
